@@ -1,6 +1,10 @@
 <template>
-  <router-view />
-  <app-layout />
+  <app-layout>
+    <router-view />
+    <!--User goes to / (Home Page):
+<router-view /> inside <AppLayout> is replaced with <HomePage />.
+-->
+  </app-layout>
 </template>
 <script>
 import AppLayout from "@/components/global/AppLayout.vue";

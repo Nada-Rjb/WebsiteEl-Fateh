@@ -1,23 +1,23 @@
 <template>
   <div class="layout">
     <v-layout>
-      
+      <AppDrawer />
+      <AppNavbar />
       <v-main>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-          mollitia quis praesentium. Impedit explicabo facere esse qui iusto,
-          quas quos velit distinctio laborum voluptatum, provident assumenda,
-          incidunt consequatur aspernatur. Sit.
-        </p>
+        <slot></slot>
       </v-main>
-   
+      <AppFooter />
     </v-layout>
   </div>
 </template>
 <script>
+import AppNavbar from "./AppNavbar.vue";
+import AppFooter from "./AppFooter.vue";
+import AppDrawer from "./AppDrawer.vue";
 export default {
   data: () => ({
     drawer: false,
   }),
+  components: { AppNavbar, AppFooter, AppDrawer },
 };
 </script>
