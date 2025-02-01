@@ -14,21 +14,25 @@
             </div>
           </v-col>
           <v-col cols="5">
-            <div class="search position-relative">
+            <div class="position-relative" style="width: 80%">
               <input
                 type="search"
                 name="Navsearch"
                 id="Navsearch"
-                style="width: 80%; border-radius: 30px; outline: none"
+                style="width: 100%; border-radius: 30px; outline: none"
                 class="py-3 px-8 bg-white"
                 placeholder="Search in Factory"
               />
+              <IconGeneral
+                name="search"
+                style="
+                  position: absolute;
+                  right: 10px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                "
+              ></IconGeneral>
             </div>
-            <img
-              style="width: 30px; position: absolute"
-              src="@/assets/imges/magnify.svg"
-              alt="search"
-            />
           </v-col>
           <v-col cols="4" class="ps-5">
             <div
@@ -136,7 +140,9 @@
 </template>
 
 <script>
+import IconGeneral from "./IconGeneral.vue";
 export default {
+  components: { IconGeneral },
   data: () => ({
     selectedLang: {
       title: "EN/USD",
