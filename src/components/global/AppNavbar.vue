@@ -62,6 +62,12 @@
                 @click="openCart"
                 style="cursor: pointer"
               >
+                <v-badge
+                  location="right top"
+                  content="2"
+                  color="blue"
+                  offset-x="-15"
+                ></v-badge>
                 <img
                   style="width: 30px"
                   src="@/assets/imges/cart.webp"
