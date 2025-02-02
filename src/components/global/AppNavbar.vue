@@ -146,7 +146,7 @@
 </template>
 
 <script>
-import IconGeneral from "./IconGeneral.vue";
+import IconGeneral from "../IconGeneral.vue";
 export default {
   components: { IconGeneral },
   data: () => ({

@@ -1,14 +1,18 @@
 <template>
   <div class="home">
-    <h1>this is home</h1>
-    <v-icon>mdi-home</v-icon>
+    <UpperBanner />
+    <TheFeature />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-
+import UpperBanner from "@/components/HomePage/UpperBanner.vue";
+import TheFeature from "@/components/HomePage/TheFeature.vue";
 export default {
-  name: "HomeView",
+  components: {
+    UpperBanner,
+    TheFeature,
+  },
 };
 </script>

@@ -1,9 +1,9 @@
 <template>
   <div class="layout">
-    <v-layout>
+    <v-layout class="position-relative">
       <AppDrawer />
       <AppNavbar />
-      <v-main>
+      <v-main style="padding-top: 180px">
         <slot></slot>
       </v-main>
       <AppFooter />
