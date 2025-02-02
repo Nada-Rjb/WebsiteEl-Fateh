@@ -2,18 +2,21 @@
   <div class="feature">
     <v-container>
       <v-row>
+        <!-- First Column -->
         <v-col>
-          <div class="parent d-flex flex-row align-center">
+          <div class="parent d-flex align-center justify-center">
             <IconGeneral
               name="FastShipping"
               style="width: 30px"
               class="mr-5"
             ></IconGeneral>
-            <span>Free Shipping</span>
+            <span>Free Shipping & Return</span>
           </div>
         </v-col>
+
+        <!-- Middle Column -->
         <v-col>
-          <div class="parent d-flex flex-row align-center">
+          <div class="parentMiddel d-flex align-center justify-center">
             <IconGeneral
               name="Grantee"
               style="width: 25px"
@@ -22,8 +25,10 @@
             <span>Product Guarantee</span>
           </div>
         </v-col>
+
+        <!-- Third Column -->
         <v-col>
-          <div class="parent d-flex flex-row align-center">
+          <div class="parent d-flex align-center justify-center">
             <IconGeneral
               name="trophy"
               style="width: 30px"
@@ -45,16 +50,31 @@ export default {
 };
 </script>
 
-<style scoped>
-.parent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+<style lang="scss" scoped>
+.feature {
+  .parentMiddel {
+    position: relative;
 
-.parent span {
-  margin-top: 0.5rem;
-  font-size: 1.2rem;
+    /* Left Separator */
+    &::before {
+      content: "|";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #999;
+      font-size: 1.5rem;
+    }
+
+    &::after {
+      content: "|";
+      position: absolute;
+      right: -15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #999;
+      font-size: 1.5rem;
+    }
+  }
 }
 </style>
