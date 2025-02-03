@@ -1,6 +1,6 @@
 <template>
   <div class="navbar">
-    <v-app-bar color="#f0f8ff" class="pt-3" height="fit-content">
+    <v-app-bar color="#f0f8ff" class="pt-3" height="fit-content" absolute>
       <!-- <v-app-bar-nav-icon @click="openCart"> </v-app-bar-nav-icon> -->
       <v-container fluid>
         <v-row>
