@@ -3,8 +3,24 @@
     <UpperBanner />
     <TheFeature />
     <TopItems />
-    <FlashDeals :products="FlashDeals" /> />
     <!-- Ensure product is passed correctly -->
+  </div>
+  <div>
+    <div style="display: flex; flex-wrap: wrap">
+      <div
+        v-for="(product, index) in FlashDeals.slice(0, 5)"
+        :key="index"
+        class="bg-red"
+        style="
+          flex: 1 0 20%;
+          max-width: 20%;
+          box-sizing: border-box;
+          padding: 10px;
+        "
+      >
+        <FlashDeals :product="product" />
+      </div>
+    </div>
   </div>
 </template>
 

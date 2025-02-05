@@ -8,11 +8,23 @@
 .flex {
   display: flex;
 }
+.grid {
+  display: grid;
+}
 .hidden {
   display: none;
 }
+.w-full {
+  width: 100%;
+}
 .transform {
   transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .flex-row {
   flex-direction: row;
@@ -25,6 +37,9 @@
 }
 .bg-\[003262\] {
   background-color: 003262;
+}
+.object-cover {
+  object-fit: cover;
 }
 .underline {
   text-decoration-line: underline;
